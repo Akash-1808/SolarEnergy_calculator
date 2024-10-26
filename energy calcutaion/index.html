@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solar Energy Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Solar Energy Calculator</h1>
+        <p>Your tool for estimating solar energy output, costs, and savings.</p>
+    </header>
+
+    <main>
+        <section class="input-section">
+            <h2>Enter Your Details</h2>
+            <form id="solarCalculatorForm">
+                <label for="panelSize">Panel Size (sq. ft.):</label>
+                <input type="number" id="panelSize" required>
+
+                <label for="panelEfficiency">Panel Efficiency (%):</label>
+                <input type="number" id="panelEfficiency" required>
+
+                <label for="tiltAngle">Tilt Angle (degrees):</label>
+                <input type="number" id="tiltAngle" required>
+
+                <label for="orientation">Orientation (degrees):</label>
+                <input type="number" id="orientation" required>
+
+                <button type="submit">Calculate Energy Output</button>
+            </form>
+        </section>
+
+        <section class="results-section" id="results" style="display:none;">
+            <h2>Results</h2>
+            <div id="output"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Solar Energy Calculator. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
